@@ -1,0 +1,262 @@
+EESchema Schematic File Version 4
+LIBS:smpsu-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project:LM2676SX-ADJ_NOPB U1
+U 1 1 5BF889A6
+P 5850 2900
+F 0 "U1" H 5850 3165 50  0000 C CNN
+F 1 "LM2676SX-ADJ_NOPB" H 5850 3074 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin8" H 6100 2200 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm2676.pdf" H 6250 2100 50  0001 C CNN
+	1    5850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5BF88AF6
+P 4600 3100
+F 0 "C2" H 4692 3146 50  0000 L CNN
+F 1 "100nF" H 4692 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5BF88B3E
+P 4150 3100
+F 0 "C1" H 4242 3146 50  0000 L CNN
+F 1 "68µF" H 4242 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x12.6" H 4150 3100 50  0001 C CNN
+F 3 "~" H 4150 3100 50  0001 C CNN
+	1    4150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3000 4150 2900
+Wire Wire Line
+	4150 2900 4600 2900
+Wire Wire Line
+	4600 3000 4600 2900
+Connection ~ 4600 2900
+Wire Wire Line
+	4600 2900 5200 2900
+Wire Wire Line
+	4150 3200 4150 3750
+Wire Wire Line
+	4150 3750 4600 3750
+Wire Wire Line
+	4600 3750 4600 3200
+Wire Wire Line
+	4600 3750 5100 3750
+Wire Wire Line
+	5100 3750 5100 3400
+Wire Wire Line
+	5100 3300 5200 3300
+Connection ~ 4600 3750
+Wire Wire Line
+	5200 3400 5100 3400
+Connection ~ 5100 3400
+Wire Wire Line
+	5100 3400 5100 3300
+Wire Wire Line
+	6500 2900 6950 2900
+$Comp
+L Device:D_Schottky_Small_ALT D1
+U 1 1 5BF88DCA
+P 6950 3150
+F 0 "D1" V 6904 3218 50  0000 L CNN
+F 1 "B560C" V 6995 3218 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" V 6950 3150 50  0001 C CNN
+F 3 "~" V 6950 3150 50  0001 C CNN
+	1    6950 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3750 5950 3750
+Wire Wire Line
+	6950 3750 6950 3250
+Connection ~ 5100 3750
+$Comp
+L Device:L L1
+U 1 1 5BF89085
+P 7250 2900
+F 0 "L1" V 7350 2900 50  0000 C CNN
+F 1 "22µH" V 7200 2900 50  0000 C CNN
+F 2 "Inductor_SMD:L_10.4x10.4_H4.8" H 7250 2900 50  0001 C CNN
+F 3 "~" H 7250 2900 50  0001 C CNN
+	1    7250 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 2900 7100 2900
+Connection ~ 6950 2900
+$Comp
+L Device:C_Small C3
+U 1 1 5BF89585
+P 6750 3000
+F 0 "C3" V 6521 3000 50  0000 C CNN
+F 1 "100nF" V 6612 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6750 3000 50  0001 C CNN
+F 3 "~" H 6750 3000 50  0001 C CNN
+	1    6750 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3000 6950 3000
+Wire Wire Line
+	6950 2900 6950 3000
+Connection ~ 6950 3000
+Wire Wire Line
+	6950 3000 6950 3050
+Wire Wire Line
+	6500 3100 6550 3100
+Wire Wire Line
+	6550 2400 6750 2400
+Wire Wire Line
+	7550 2400 7550 2900
+Wire Wire Line
+	7550 2900 7400 2900
+$Comp
+L Device:C_Small C4
+U 1 1 5BF89FDC
+P 7550 3150
+F 0 "C4" H 7642 3196 50  0000 L CNN
+F 1 "1000µF" H 7642 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x12.6" H 7550 3150 50  0001 C CNN
+F 3 "~" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2900 7550 3050
+Wire Wire Line
+	7550 3250 7550 3750
+Wire Wire Line
+	7550 3750 6950 3750
+Connection ~ 6950 3750
+NoConn ~ 5200 3000
+$Comp
+L power:GND #PWR0101
+U 1 1 5BF8A77D
+P 5950 3750
+F 0 "#PWR0101" H 5950 3500 50  0001 C CNN
+F 1 "GND" H 5955 3577 50  0000 C CNN
+F 2 "" H 5950 3750 50  0001 C CNN
+F 3 "" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 3750
+Wire Wire Line
+	5950 3750 6550 3750
+$Comp
+L Device:R_Small R2
+U 1 1 5BF8A95E
+P 6550 3350
+F 0 "R2" H 6609 3396 50  0000 L CNN
+F 1 "10k" H 6609 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6550 3350 50  0001 C CNN
+F 3 "~" H 6550 3350 50  0001 C CNN
+	1    6550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3100 6550 3250
+Wire Wire Line
+	6550 3450 6550 3750
+Connection ~ 6550 3750
+Wire Wire Line
+	6550 3750 6950 3750
+$Comp
+L Device:R_Small R1
+U 1 1 5BF8AF82
+P 6850 2400
+F 0 "R1" V 6654 2400 50  0000 C CNN
+F 1 "10k" V 6745 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6850 2400 50  0001 C CNN
+F 3 "~" H 6850 2400 50  0001 C CNN
+	1    6850 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 2400 7150 2400
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5BF8B29E
+P 7300 2400
+F 0 "RV1" V 7186 2400 50  0000 C CNN
+F 1 "30k" V 7095 2400 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 7300 2400 50  0001 C CNN
+F 3 "~" H 7300 2400 50  0001 C CNN
+	1    7300 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 2400 7550 2400
+Wire Wire Line
+	7300 2250 7300 2150
+Wire Wire Line
+	7300 2150 7550 2150
+Wire Wire Line
+	7550 2150 7550 2400
+Connection ~ 7550 2400
+Connection ~ 7550 2900
+Wire Wire Line
+	6500 3000 6650 3000
+Wire Wire Line
+	6550 2400 6550 3100
+Connection ~ 6550 3100
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5BF8EB16
+P 3550 3000
+F 0 "J1" H 3550 2800 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3470 2766 50  0001 C CNN
+F 2 "282837-2:TE_282837-2" H 3550 3000 50  0001 C CNN
+F 3 "~" H 3550 3000 50  0001 C CNN
+	1    3550 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5BF8EB9A
+P 8450 2900
+F 0 "J2" H 8400 3000 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8530 2801 50  0001 L CNN
+F 2 "282837-2:TE_282837-2" H 8450 2900 50  0001 C CNN
+F 3 "~" H 8450 2900 50  0001 C CNN
+	1    8450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2900 4150 2900
+Connection ~ 4150 2900
+Wire Wire Line
+	3750 3000 3750 3750
+Wire Wire Line
+	3750 3750 4150 3750
+Connection ~ 4150 3750
+Wire Wire Line
+	8250 2900 7550 2900
+Wire Wire Line
+	8250 3000 8250 3750
+Wire Wire Line
+	8250 3750 7550 3750
+Connection ~ 7550 3750
+$EndSCHEMATC
